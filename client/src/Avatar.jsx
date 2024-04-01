@@ -10,7 +10,7 @@ const Avatar = ({ username, userId, online }) => {
     return (
         <div className={'w-8 relative text-center align-center flex h-8  rounded-full ' + color}>
             <div className='text-center w-full mt-1 items-center'>
-                <span className=' relative font-semibold opacity-70'>{username[0].toUpperCase()}</span>
+                <span className=' relative font-semibold opacity-70'>{username[0]?.toUpperCase()}</span>
             </div>
             {online &&
                 (<div className='absolute right-0 bottom-0 w-3 h-3 bg-green-500 rounded-full'></div>)

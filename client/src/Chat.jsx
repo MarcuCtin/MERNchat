@@ -179,12 +179,12 @@ const Chat = () => {
     }
     return (
         <div className='flex w-full h-full backdrop-blur-lg rounded-xl'>
-            <div className="relative shadow-xl bg-black/90 flex flex-col  w-1/3  pt-3 rounded-xl">
+            <div className="relative shadow-xl bg-black/90 flex flex-col  w-1/3  pt-3 rounded-xl overflow-scroll pb-5">
                 <div className="text-white pb-2 pl-5 mb-5 mt font-italic font-bold text-2xl italic flex flex-">
                     Chattin'
                 </div>
                 <div>
-                <div className=''>
+                <div className='h-'>
                     {Object.keys(onlinePeopleExcludingMe).map(userId => (
                         <Contact id={userId} 
                         online={true}
@@ -197,7 +197,7 @@ const Chat = () => {
 
                 </div>
                 
-                <div className=''>
+                <div className='mb-5'>
                     {Object.keys(offlineUsers).map(userId => (
                         <Contact id={userId} 
                         online={false}
@@ -211,7 +211,7 @@ const Chat = () => {
                 </div>
                 
                 </div>
-                <div className="mt-auto mb-3 ml-3 text-white">Logged as <b>{username}</b> 
+                <div className="mt-auto mb-3 ml-3 text-white fixed bottom-0">Logged as <b>{username}</b> 
                         <button onClick={Logout} className=' text-sm px-5 bg-white text-black rounded-xl mx-2'>Logout</button>
                 </div>
             </div>
