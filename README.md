@@ -5,6 +5,9 @@ This is a simple chat application with the following functionalities:
 - Send images and documents
 - Message history
 - Modern design
+- Peer to Peer Functionality using websockets
+- Message Seen status
+- Online\Offline statuses
 
 ## Running the Application
 
